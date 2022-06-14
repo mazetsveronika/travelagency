@@ -1,0 +1,127 @@
+/* -----------------Header-------------------- */
+header {
+    width: 100%;
+    height: 80px;
+    background: #31f0da;
+}
+
+.logo {
+    height: 80px;
+    margin: 10px;
+    padding-left: 120px;
+}
+
+.welcom {
+    position: absolute;
+    right: 550px;
+    top: 15px;
+    color: white;
+    margin: 10px;
+    font-size: 12px;
+}
+
+.contact-info {
+    position: absolute;
+    right: 140px;
+    top: 15px;
+}
+
+#contact-info li {
+    display: block;
+    color: white;
+    margin: 10px;
+    font-size: 14px;
+}
+
+/* ----------------------Footer---------------------------- */
+* {
+    margin: 0;
+    padding: 0;
+}
+html,
+body {
+    height: 95%;
+}
+
+.footer {
+    flex: 0 0 auto;
+    width: 100%;
+    height: 70px;
+    background: #31f0da;
+}
+#footercontext {
+    color: White;
+    font-size: 16px;
+    padding-top: 20px;
+}
+
+#footercontext img {
+    height: 20px;
+    width: 20px;
+    margin-left: 3px;
+    margin-right: 3px;
+}
+#footercontext img twitter{
+    height: 25px;
+    width: 25px;
+    margin-left: 3px;
+    margin-right: 3px;
+}
+/* ----------------------------Body for all pages----------------------------*/
+body {
+    background-size: 1600px 706px;
+    background: #F0FFFF url("/resources/image/background.png") no-repeat fixed center;
+    font-family: Georgia;
+}
+
+td {
+    margin: 5px;
+    padding: 5px;
+    background: Cornsilk;
+}
+
+/* ------------------------------Home Page---------------------------- */
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    height: 85%;
+}
+
+.content {
+    flex: 1 0 auto;
+}
+
+/* ---------------------------Register Page------------------------------ */
+#registration-table {
+    margin-top: 20px;
+    margin-left: 500px;
+    margin-bottom: 10px;
+    border: 5px ridge #030101;
+}
+
+#registration-table td {
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+/* -------------------------------Error Page-------------------------- */
+.error {
+    margin-top: 50px;
+    margin-left: 500px;
+    margin-right: 500px;
+    padding: 25px;
+    background: white;
+}
+
+/* -------------------------------login Page----------------------------- */
+#login-table {
+    margin-top: 20px;
+    margin-left: 500px;
+    margin-bottom: 10px;
+    border: 5px ridge #ffffff;
+}
+
+#login-table td {
+    padding-left: 25px;
+    padding-right: 25px;
+}
