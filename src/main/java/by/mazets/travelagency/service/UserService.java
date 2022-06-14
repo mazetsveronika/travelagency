@@ -12,7 +12,7 @@ import java.util.Optional;
 
 public interface UserService {
     
-    Optional<User> findUser(String login, String password) throws TravelAgencyServiceException;
+    Optional<User> findUser(String login, String password) throws TravelAgencyServiceException;//fix me
 
    
     Optional<User> findUser(String surname, String name, RoleType roleType) throws TravelAgencyServiceException;
