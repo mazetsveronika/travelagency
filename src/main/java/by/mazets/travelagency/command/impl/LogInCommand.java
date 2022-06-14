@@ -24,7 +24,6 @@ import static by.mazets.travelagency.command.RequestParameter.*;
 public class LogInCommand implements Command {
     
     private static final Logger logger = LogManager.getLogger();
-    private static final String SIGN_IN_ERROR_MESSAGE_KEY = "error.sign_in";
     private final UserService userService = UserServiceImpl.getInstance();
 
     @Override
@@ -45,7 +44,6 @@ public class LogInCommand implements Command {
             } else {
                 request.setAttribute(USER_LOGIN, login);
                 request.setAttribute(USER_PASSWORD, password);
-                request.setAttribute(MESSAGE, SIGN_IN_ERROR_MESSAGE_KEY);
                 return new Router(PagePath.LOGIN_PAGE, Router.RouterType.FORWARD);
             }
         } catch (TravelAgencyServiceException e) {
