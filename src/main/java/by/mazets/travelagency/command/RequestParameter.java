@@ -27,60 +27,13 @@ package by.mazets.travelagency.command;
 
         public static final String PHONE_NUMBER = "number";
 
-        public static final String STATUS = "status";
-
-        public static final String CURRENT_STATUS = "current_status";
-
-        public static final String ROLE = "role";
+        public static final String ROLE = "role";//fix
 
         public static final String UPLOADED_PICTURE = "uploaded_picture";
 
-        public static final String CATEGORY = "category";
+       public static final String ID = "id";
 
-        public static final String NEW_CATEGORY = "new_category";
-
-        public static final String TYPE = "type";
-
-        public static final String TEACHER = "teacher";
-
-        public static final String WEEKDAYS = "weekdays";
-
-        public static final String TIME = "time";
-
-        public static final String DURATION = "duration";
-
-        public static final String MIN_AGE = "min_age";
-
-        public static final String MAX_AGE = "max_age";
-
-        public static final String LESSON_PRICE = "lesson_price";
-
-        public static final String STUDENT_AMOUNT = "student_amount";
-
-        public static final String DESCRIPTION = "description";
-
-        public static final String CHOSEN_COURSE_ID = "chosen_course_id";
-
-        public static final String LESSON_AMOUNT = "lesson_amount";
-
-        public static final String ENROLLMENT_ID = "enrollment_id";
-
-        public static final String CHOSEN_ENROLLMENT_ID = "chosen_enrollment_id";
-
-        public static final String CARD_NUMBER = "card_number";
-
-        public static final String OWNER_NAME = "owner_name";
-
-        public static final String EXPIRATION_DATE = "expiration_date";
-
-        public static final String CVV_NUMBER = "cvv_number";
-
-        public static final String BALANCE = "balance";
-
-        public static final String ID = "id";
-
-        public static final String PAGE = "page";
-
+//todo
 
     }
 
