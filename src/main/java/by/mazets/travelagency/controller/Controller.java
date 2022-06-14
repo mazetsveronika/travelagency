@@ -11,7 +11,7 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 
-@WebServlet(name = "Controller", urlPatterns ={"/controller"})//todo
+@WebServlet(name = "Controller", urlPatterns ={"/controller"})//?
 public class Controller extends HttpServlet {
 
     private static final Logger logger = LogManager.getLogger();
