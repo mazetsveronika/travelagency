@@ -42,7 +42,7 @@ public class UserDaoImpl extends UserDao {
             = "SELECT user_id, name, surname, discount_percentage, money, email, login, password, roles_role_id FROM users WHERE user_id = ?;";
     private static final String SQL_SELECT_ALL_USER
             = "SELECT user_id, name, surname, discount_percentage, money, email, login, password, roles_role_id FROM users";
-
+//todo
     public UserDaoImpl() {
     }
 
