@@ -22,17 +22,17 @@ public class UserMapper implements Mapper<User> {
     }
 
     @Override
-    public List<User> retrieve(ResultSet resultSet) throws SQLException {
+    public List<User> retrieve(ResultSet resultSet) throws SQLException {//todo!!
         List<User> users = new ArrayList<>();
         while (resultSet.next()) {
             User user = new User.UserBuilder()
-                   // .setId(resultSet.getInt(USER_ID))
+                    .setId(resultSet.getInt(USER_ID))
                     .setLogin(resultSet.getString(USER_LOGIN))
-                    //setSurname(resultSet.getString(USER_SURNAME))
-                   // .setName(resultSet.getString(USER_NAME))
-                    //.setEmail(resultSet.getString(USER_EMAIL))
-                   // .setPhoneNumber(Integer.valueOf(resultSet.getLong(USER_PHONE_NUMBER)))
-                  //  .setUserRole(RoleType.valueOf(resultSet.getString(USER_ROLE).toUpperCase()))
+                    .setSurname(resultSet.getString(USER_SURNAME))
+                    .setName(resultSet.getString(USER_NAME))
+                    .setEmail(resultSet.getString(USER_EMAIL))
+                    .setPhoneNumber(Integer.valueOf(resultSet.getLong(USER_PHONE_NUMBER)))
+                    .setUserRole(RoleType.valueOf(resultSet.getString(USER_ROLE).toUpperCase()))
                     .build();
             users.add(user);
         }
