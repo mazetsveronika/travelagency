@@ -1,0 +1,130 @@
+/* -----------------Header-------------------- */
+header {
+    width: 100%;
+    height: 120px;
+    background: #31f0da;
+}
+
+.logo {
+    height: 130px;
+    margin-top: 0px;
+    padding-left: 2px;
+}
+
+.welcom {
+    position: absolute;
+    right: 480px;
+    top: 10px;
+    color: white;
+    margin: 20px;
+    font-size: 50px;
+    font-weight: bolder;
+}
+
+.contact-info {
+    position: absolute;
+    right: 40px;
+    top: 15px;
+}
+
+#contact-info li {
+    display: block;
+    color: #ffffff;
+    top: 15px;
+    margin: 10px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+/* ----------------------Footer---------------------------- */
+* {
+    margin: 0;
+    padding: 0;
+}
+html,
+body {
+    height: 100%;
+}
+
+.footer {
+    flex: 0 0 auto;
+    width: 100%;
+    height: 80px;
+    background: #31f0da;
+}
+#footercontext {
+    color: #2f2b2b;
+    font-size: 16px;
+    font-weight: 500;
+    padding-top: 20px;
+
+}
+
+#footercontext img {
+
+    height: 20px;
+    width: 20px;
+    margin-left: 4px;
+    margin-right: 4px;
+}
+
+
+/* ----------------------------Body for all pages----------------------------*/
+body {
+    background: #F0FFFF url(https://krot.info/uploads/posts/2022-02/thumbs/1644831455_35-krot-info-p-fon-turizm-36.jpg) no-repeat center center fixed;
+    background-size: cover;
+    font-family: Georgia;
+}
+
+td {
+    margin: 5px;
+    padding: 5px;
+    background: Cornsilk;
+}
+
+
+/* ------------------------------Home Page---------------------------- */
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    height: 110%;
+}
+
+.content {
+    flex: 1 0 auto;
+}
+
+/* ---------------------------Register Page------------------------------ */
+#registration-table {
+    margin-top: 50px;
+    margin-left: 350px;
+    margin-bottom: 10px;
+    border: 10px ridge #31f0da;
+}
+
+#registration-table td {
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+/* -------------------------------Error Page-------------------------- */
+.error {
+    margin-top: 50px;
+    margin-left: 500px;
+    margin-right: 500px;
+    padding: 25px;
+    background: white;
+}
+
+/* -------------------------------login Page----------------------------- */
+#login-table {
+    margin-top: 100px;
+    margin-left: 350px;
+    margin-bottom: 10px;
+    border: 10px ridge #31f0da;
+}
+
+#login-table td {
+    padding-left: 50px;
+    padding-right: 50px;
+}

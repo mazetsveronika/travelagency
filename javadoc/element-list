@@ -1,0 +1,14 @@
+by.mazets.travelagency.connection
+by.mazets.travelagency.controller
+by.mazets.travelagency.controller.command
+by.mazets.travelagency.controller.filter
+by.mazets.travelagency.controller.listener
+by.mazets.travelagency.controller.tag
+by.mazets.travelagency.dao
+by.mazets.travelagency.dao.impl
+by.mazets.travelagency.entity
+by.mazets.travelagency.entity.type
+by.mazets.travelagency.exception
+by.mazets.travelagency.service
+by.mazets.travelagency.service.impl
+by.mazets.travelagency.service.validator
