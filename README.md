@@ -29,5 +29,5 @@ regular customers.
 ## Database schema
 </p>
 <p align="center">
-  <kbd> <img alt="Database" src="" width="800" style="border-radius:10px"\></kbd> 
+  <kbd> <img alt="Database" src="https://github.com/mazetsveronika/travelagency/blob/fb0fbd3efa1e9c3f4885bd81bc248ba632b59025/agency_db_scheme.png" width="800" style="border-radius:10px"\></kbd> 
 </p>
