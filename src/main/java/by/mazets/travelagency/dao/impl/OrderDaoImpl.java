@@ -105,7 +105,7 @@ public class OrderDaoImpl implements OrderDao {
                 ps.executeUpdate();
 
                 psUser = connection.prepareStatement(SQL_UPDATE_USER_MONEY_BY_ID);
-                psUser.setBigDecimal(1, (order.getUser().getMoney()).subtract(order.getTotalPrice()));//fixme
+                psUser.setBigDecimal(1, (order.getUser().getMoney()).subtract(order.getTotalPrice()));
                 psUser.setInt(2, order.getUser().getId());
                 psUser.executeUpdate();
 
@@ -144,8 +144,9 @@ public class OrderDaoImpl implements OrderDao {
 
     private BigDecimal calculateTotalPrice(Order order) {
         int nights = (int)(order.getVoucher().getDateTo().getTime() - order.getVoucher().getDateFrom().getTime())/(24 * 60 * 60 * 1000);
-        BigDecimal totalPrice = (order.getVoucher().getHotel().getPricePerDay().add(order.getVoucher().getTour().getPrice())).
-                multiply(BigDecimal.valueOf(nights)).
+        BigDecimal totalPrice = ((order.getVoucher().getHotel().getPricePerDay().
+                multiply(BigDecimal.valueOf(nights))).
+                add(order.getVoucher().getTour().getPrice())).
                 multiply(BigDecimal.valueOf((100 - order.getUser().getDiscount())/100));
         return totalPrice;
     }
@@ -179,7 +180,7 @@ public class OrderDaoImpl implements OrderDao {
                 ps.executeUpdate();
 
                 psUser = connection.prepareStatement(SQL_UPDATE_USER_MONEY_BY_ID);
-                psUser.setBigDecimal(1, (order.getUser().getMoney()).add(order.getTotalPrice()));//fixme
+                psUser.setBigDecimal(1, (order.getUser().getMoney()).add(order.getTotalPrice()));
                 psUser.setInt(2, order.getUser().getId());
                 psUser.executeUpdate();
 

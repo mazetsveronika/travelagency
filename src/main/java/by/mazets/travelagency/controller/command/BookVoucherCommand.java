@@ -41,8 +41,8 @@ public class BookVoucherCommand implements Command {
         VoucherService voucherService = factory.getVoucherService();
         UserService userService = factory.getUserService();
 
-        String voucherID = request.getParameter("idvoucher");
-        logger.debug("voucherID: " + voucherID);
+        String id = request.getParameter("id");
+        logger.debug("voucherID: " + id);
         String userId = request.getParameter("id");
         logger.debug("userId: " + userId);
         List<AbstractEntity> vouchers;
@@ -52,7 +52,7 @@ public class BookVoucherCommand implements Command {
         try {
             vouchers = voucherService.findAll();
 
-            Voucher voucher = (Voucher) voucherService.findById(Integer.parseInt(voucherID));
+            Voucher voucher = (Voucher) voucherService.findById(Integer.parseInt(id));
             logger.debug("voucher: " + voucher);
             User user = (User) userService.findById(Integer.parseInt(userId));
             logger.debug("user: " + user);
@@ -60,7 +60,7 @@ public class BookVoucherCommand implements Command {
             order = new Order();
             BigDecimal totalPrice = calculateTotalPrice(voucher, user);
 
-            if (user.getMoney().compareTo(totalPrice) >= 0) {//?
+            if (user.getMoney().compareTo(totalPrice) >= 0) {
                 try {
                     order.setUser(user);
                     order.setVoucher(voucher);
@@ -109,8 +109,8 @@ public class BookVoucherCommand implements Command {
      */
     private BigDecimal calculateTotalPrice(Voucher voucher, User user) {
         int nights = (int)(voucher.getDateTo().getTime() - voucher.getDateFrom().getTime())/(24 * 60 * 60 * 1000);
-        BigDecimal totalPrice = (voucher.getHotel().getPricePerDay().add(voucher.getTour().getPrice())).
-                multiply(BigDecimal.valueOf(nights)).
+        BigDecimal totalPrice = (((voucher.getHotel().getPricePerDay()).
+                multiply(BigDecimal.valueOf(nights))).add(voucher.getTour().getPrice())).
                 multiply(BigDecimal.valueOf(((100 - user.getDiscount()))/100));
         return totalPrice;
     }

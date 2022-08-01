@@ -29,9 +29,9 @@ public class UpdateTourCommand implements Command {
         TourService tourService = factory.getTourService();
 
         try {
-            int idTour = Integer.parseInt(request.getParameter("idTour"));
+            int id = Integer.parseInt(request.getParameter("id"));
             boolean isHot = Boolean.parseBoolean(request.getParameter("isHot"));
-            tourService.setHotTour(idTour, isHot);
+            tourService.setHotTour(id, isHot);
 
             request.setAttribute("acceptedMessageAdminUpdate", "update tour accepted");
             page = PageContainer.ADMIN_MENU_PAGE;

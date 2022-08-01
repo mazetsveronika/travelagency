@@ -45,7 +45,6 @@ public class ToChooseVoucherCommand implements Command {
             vouchers = voucherService.findAll();
             Order order;
 
-            //not show not available to order vouchers//fixme
             for (int i = 0; i < vouchers.size(); i++) {
                 for (int j = 0; j < orders.size(); j++) {
                     order = (Order) orders.get(j);
@@ -54,7 +53,6 @@ public class ToChooseVoucherCommand implements Command {
                     }
                 }
             }
-            //calculate voucher total price and create array//fixme
           for (int i = 0; i < vouchers.size(); i++) {
                 voucherPrice.add(calculateVoucherTotalPrice((Voucher) vouchers.get(i)));
             }
@@ -79,8 +77,8 @@ public class ToChooseVoucherCommand implements Command {
 
     private BigDecimal calculateVoucherTotalPrice(Voucher voucher) {
         int nights = (int)(voucher.getDateTo().getTime() - voucher.getDateFrom().getTime())/(24 * 60 * 60 * 1000);
-        BigDecimal totalPrice = (voucher.getHotel().getPricePerDay().add(voucher.getTour().getPrice())).
-                multiply(BigDecimal.valueOf(nights));
+        BigDecimal totalPrice = ((voucher.getHotel().getPricePerDay().
+                multiply(BigDecimal.valueOf(nights))).add(voucher.getTour().getPrice()));
         return totalPrice;
     }
 

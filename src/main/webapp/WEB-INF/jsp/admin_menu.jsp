@@ -70,7 +70,7 @@
     <form action="Controller" method="post">
         <input type="hidden" name="command" value="add_voucher" />
         <table>
-            <caption style="color: #211e1e; font-weight: bold; font-size: 16px; font-style: italic">${addVoucherTable}</caption>
+            <caption style="color: #ffffff; font-weight: bolder; font-size: 18px; font-style: italic">${addVoucherTable}</caption>
             <tr>
                 <td>
                     <table border="1"  style="border: 3px ridge #030101">
@@ -142,9 +142,10 @@
 <!------- UPDATE TOUR TABLE ------------->
 <div align="center" style="margin-top: 5px; margin-bottom: 5px">
     <table>
-        <caption style="color: #211e1e; font-weight: bold; font-size: 16px; font-style: italic">${updateTourTable}</caption>
+        <caption style="color: #ffffff; font-weight: bolder; font-size: 18px; font-style: italic">${updateTourTable}</caption>
+        <tr>
             <td>
-                <table border="1"  style="">
+                <table border="1"  style="border: 3px ridge #211e1e">
                     <tr align="center" style="font-weight: bold">
                         <td>ID</td>
                         <td>${tourtype}</td>
@@ -152,7 +153,7 @@
                         <td>${tourhot}</td>
                         <td></td>
                     </tr>
-                    <c:forEach var="tours" items="${tourService.findAll()}" varStatus="status">
+                    <c:forEach var="tour" items="${tourService.findAll()}" varStatus="status">
                         <form action="Controller" method="post">
                             <input type="hidden" name="command" value="update_tour" />
                             <input type="hidden" name="idTour" value="${tour.id}"/>
@@ -174,7 +175,7 @@
                         </form>
                     </c:forEach>
                 </table>
-                <p align="center" style="color: #030101; font-weight: bold; font-size: 16px; font-style: italic">${acceptedMessageAdminUpdate}</p>
+                <p align="center" style="color: #211e1e; font-weight: bold; font-size: 16px; font-style: italic">${acceptedMessageAdminUpdate}</p>
             </td>
         </tr>
     </table>
@@ -183,7 +184,7 @@
 <!------- UPDATE USER DISCOUNT TABLE ------------->
 <div align="center" style="margin-top: 5px; margin-bottom: 5px">
     <table>
-        <caption style="color: #211e1e; font-weight: bold; font-size: 16px; font-style: italic">${updateUserDiscountTable}</caption>
+        <caption style="color: #ffffff; font-weight: bolder; font-size: 18px; font-style: italic">${updateUserDiscountTable}</caption>
         <tr>
             <td>
                 <table border="1"  style="border: 3px ridge #030101">

@@ -41,27 +41,27 @@
       <td><p>${name}</p></td>
       <td><p>${username}</p></td>
     </tr>
-    <tr align="center" style="color: DarkBlue; font-weight: bold; font-size: 16px; font-style: italic">
+    <tr align="center" style="color: #075e79; font-weight: bold; font-size: 16px; font-style: italic">
       <td><p>${surname}</p></td>
       <td><p>${usersurname}</p></td>
     </tr>
-    <tr align="center" style="color: DarkBlue; font-weight: bold; font-size: 16px; font-style: italic">
+    <tr align="center" style="color: #075e79; font-weight: bold; font-size: 16px; font-style: italic">
       <td><p>${money}</p></td>
       <td><p>${usermoney}</p></td>
     </tr>
-    <tr align="center" style="color: DarkBlue; font-weight: bold; font-size: 16px; font-style: italic">
+    <tr align="center" style="color: #075e79; font-weight: bold; font-size: 16px; font-style: italic">
       <td><p>${discount}</p></td>
       <td><p>${userdiscount} %</p></td>
     </tr>
-    <tr align="center" style="color: DarkBlue; font-weight: bold; font-size: 16px; font-style: italic">
+    <tr align="center" style="color: #075e79; font-weight: bold; font-size: 16px; font-style: italic">
       <td><p>${email}</p></td>
       <td><p>${useremail}</p></td>
     </tr>
-    <tr align="center" style="color: DarkBlue; font-weight: bold; font-size: 16px; font-style: italic">
+    <tr align="center" style="color: #075e79; font-weight: bold; font-size: 16px; font-style: italic">
       <td><p>${login}</p></td>
       <td><p>${userlogin}</p></td>
     </tr>
-    <tr align="center" style="color: DarkBlue; font-weight: bold; font-size: 16px; font-style: italic">
+    <tr align="center" style="color: #075e79; font-weight: bold; font-size: 16px; font-style: italic">
       <td><p>${updateBalance}</p></td>
       <td>
         <form action="Controller" method="GET"  align="center" style="margin: 15px">

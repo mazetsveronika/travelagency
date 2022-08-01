@@ -40,7 +40,6 @@ public class ViewAllVouchers implements Command {
             List<AbstractEntity> orders = orderService.findAll();
             Order order;
 
-            //not show not available to order vouchers//fixme
             for (int i = 0; i < vouchers.size(); i++) {
                 for (int j = 0; j < orders.size(); j++) {
                     order = (Order) orders.get(j);

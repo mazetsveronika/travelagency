@@ -46,10 +46,10 @@
     <input type="submit" class="btn btn-warning" value="${logOut}"/>
 </form>
 <div align="center">
-    <table width=800px border="1"  style="border: 3px ridge DarkBlue">
+    <table width=800px border="1"  style="border: 3px ridge #075e79">
         <tr>
             <td>
-                <p align="center" style="color: DarkBlue; font-weight: bold; font-size: 16px; font-style: italic">
+                <p align="center" style="color: #075e79; font-weight: bold; font-size: 16px; font-style: italic">
                     <a href="Controller?command=choose_voucher" class="button">${chooseVoucher}</a>
                 </p>
             </td>
@@ -72,10 +72,10 @@
         <input type="hidden" name="id" value="${sessionScope.id}" />
         <!------- CREATE VOUCHER ORDER TABLE ------------->
         <table>
-            <caption style="color: GreenYellow; font-weight: bold">${createOrderTable}</caption>
+            <caption style="color: #ffffff; font-weight: bolder">${createOrderTable}</caption>
             <tr>
                 <td>
-                    <table border="1"  style="border: 3px ridge DarkBlue">
+                    <table border="1"  style="border: 3px ridge #075e79">
                         <tr align="center" style="font-weight: bold">
                             <td>№</td>
                             <td>${country}</td>
@@ -105,7 +105,7 @@
                     </table>
                 </td>
                 <td>
-                    <table border="1"  style="border: 3px ridge DarkBlue">
+                    <table border="1"  style="border: 3px ridge #075e79">
                         <tr align="center" style="font-weight: bold;">
                             <td>${priceColumn}</td>
                         </tr>
@@ -117,7 +117,7 @@
                     </table>
                 </td>
                 <td>
-                    <table border="1"  style="border: 3px ridge DarkBlue">
+                    <table border="1"  style="border: 3px ridge #075e79">
                         <tr align="center" style="font-weight: bold;">
                             <td>${book}</td>
                         </tr>
@@ -142,7 +142,7 @@
         <input type="hidden" name="command" value="cancel_order" />
         <input type="hidden" name="id" value="${sessionScope.id}" />
         <table>
-            <caption style="color: GreenYellow; font-weight: bold">${myOrders}</caption>
+            <caption style="color: #ffffff; font-weight: bolder">${myOrders}</caption>
             <tr>
                 <td>
                     <table border="1"  style="border: 3px ridge DarkBlue">
