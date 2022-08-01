@@ -16,7 +16,7 @@ regular customers.
 |Add new tours|-|-|+|
 |Change discounts|-|-|+|
 |Define the tour as "burning"|-|-|+|
-|Book a tour/voucher|-|-|+|
+|Book a tour/voucher|-|+|-|
 |Cancel order|-|+|-|
 |View his orders|-|+|-|
 |Replenish balance|-|+|-|
